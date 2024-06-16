@@ -11,12 +11,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = createTabBarController()
+        window.makeKeyAndVisible()
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,9 +50,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        CoreDataManager.shared.saveContext()
     }
-
-
+    
+    // MARK: Определяем внешний вид SearchForTicketsViewController
+    func createSearchForTicketsViewController() -> UINavigationController {
+        let searchForTicketsViewController = SearchForTicketsViewController()
+        searchForTicketsViewController.tabBarItem = UITabBarItem(title: "Search for tickets", image: UIImage(systemName: "doc.text.magnifyingglass"), tag: 0)
+        return UINavigationController(rootViewController: searchForTicketsViewController)
+    }
+    
+    // MARK: Определяем внешний вид FavoritesViewController
+    func createFavoritesViewController() -> UINavigationController {
+        let favoritesViewController = FavoritesViewController()
+        favoritesViewController.loadViewIfNeeded() // Принудительная загрузка view
+        favoritesViewController.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star"), tag: 1)
+        return UINavigationController(rootViewController: favoritesViewController)
+    }
+    
+    // MARK: Определяем внешний вид TabBarController
+    func createTabBarController() -> UITabBarController {
+        let tabBarController = UITabBarController()
+        UITabBar.appearance().backgroundColor = .systemGray5
+        tabBarController.tabBar.tintColor = .colorSkyBlue
+        tabBarController.viewControllers = [createSearchForTicketsViewController(), createFavoritesViewController()]
+        return tabBarController
+    }
+    
 }
 

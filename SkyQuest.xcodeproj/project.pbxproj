@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		8E1D0E852C0CCE0400C2BC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E842C0CCE0400C2BC5B /* AppDelegate.swift */; };
 		8E1D0E872C0CCE0400C2BC5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E862C0CCE0400C2BC5B /* SceneDelegate.swift */; };
-		8E1D0E892C0CCE0400C2BC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E882C0CCE0400C2BC5B /* ViewController.swift */; };
-		8E1D0E8C2C0CCE0400C2BC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1D0E8A2C0CCE0400C2BC5B /* Main.storyboard */; };
+		8E1D0E892C0CCE0400C2BC5B /* SearchForTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E882C0CCE0400C2BC5B /* SearchForTicketsViewController.swift */; };
 		8E1D0E8F2C0CCE0400C2BC5B /* SkyQuest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E8D2C0CCE0400C2BC5B /* SkyQuest.xcdatamodeld */; };
 		8E1D0E912C0CCE0900C2BC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1D0E902C0CCE0900C2BC5B /* Assets.xcassets */; };
 		8E1D0E942C0CCE0900C2BC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1D0E922C0CCE0900C2BC5B /* LaunchScreen.storyboard */; };
+		8E1D0E9C2C0CDBAB00C2BC5B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E9B2C0CDBAB00C2BC5B /* FavoritesViewController.swift */; };
+		8E1D0E9E2C0FACEA00C2BC5B /* FlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E9D2C0FACEA00C2BC5B /* FlightsModel.swift */; };
+		8E1D0EA02C10F7A100C2BC5B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0E9F2C10F7A100C2BC5B /* NetworkManager.swift */; };
+		8E1D0EA22C12022B00C2BC5B /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EA12C12022B00C2BC5B /* FlightTableViewCell.swift */; };
+		8E1D0EA42C12085000C2BC5B /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EA32C12085000C2BC5B /* SearchResultsController.swift */; };
+		8E1D0EA62C12516F00C2BC5B /* NetworkManagerForPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EA52C12516F00C2BC5B /* NetworkManagerForPictures.swift */; };
+		8E1D0EA82C13514700C2BC5B /* DateTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EA72C13514700C2BC5B /* DateTimeModel.swift */; };
+		8E1D0EAA2C17645600C2BC5B /* AeroportsCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EA92C17645600C2BC5B /* AeroportsCodes.swift */; };
+		8E1D0EB62C1B4CA600C2BC5B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EB52C1B4CA600C2BC5B /* CoreDataManager.swift */; };
+		8E1D0EB92C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EB72C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataClass.swift */; };
+		8E1D0EBA2C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1D0EB82C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E1D0E812C0CCE0400C2BC5B /* SkyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1D0E842C0CCE0400C2BC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E1D0E862C0CCE0400C2BC5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E1D0E882C0CCE0400C2BC5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E1D0E8B2C0CCE0400C2BC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E1D0E882C0CCE0400C2BC5B /* SearchForTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForTicketsViewController.swift; sourceTree = "<group>"; };
 		8E1D0E8E2C0CCE0400C2BC5B /* SkyQuest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyQuest.xcdatamodel; sourceTree = "<group>"; };
 		8E1D0E902C0CCE0900C2BC5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1D0E932C0CCE0900C2BC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1D0E952C0CCE0900C2BC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1D0E9B2C0CDBAB00C2BC5B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		8E1D0E9D2C0FACEA00C2BC5B /* FlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsModel.swift; sourceTree = "<group>"; };
+		8E1D0E9F2C10F7A100C2BC5B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8E1D0EA12C12022B00C2BC5B /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		8E1D0EA32C12085000C2BC5B /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		8E1D0EA52C12516F00C2BC5B /* NetworkManagerForPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerForPictures.swift; sourceTree = "<group>"; };
+		8E1D0EA72C13514700C2BC5B /* DateTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeModel.swift; sourceTree = "<group>"; };
+		8E1D0EA92C17645600C2BC5B /* AeroportsCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroportsCodes.swift; sourceTree = "<group>"; };
+		8E1D0EB52C1B4CA600C2BC5B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8E1D0EB72C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightsInfoEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8E1D0EB82C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightsInfoEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +78,74 @@
 		8E1D0E832C0CCE0400C2BC5B /* SkyQuest */ = {
 			isa = PBXGroup;
 			children = (
-				8E1D0E842C0CCE0400C2BC5B /* AppDelegate.swift */,
-				8E1D0E862C0CCE0400C2BC5B /* SceneDelegate.swift */,
-				8E1D0E882C0CCE0400C2BC5B /* ViewController.swift */,
-				8E1D0E8A2C0CCE0400C2BC5B /* Main.storyboard */,
-				8E1D0E902C0CCE0900C2BC5B /* Assets.xcassets */,
-				8E1D0E922C0CCE0900C2BC5B /* LaunchScreen.storyboard */,
+				8E1D0EAF2C1B348C00C2BC5B /* SystemFiles */,
+				8E1D0EAD2C1B32DA00C2BC5B /* ViewControllers */,
+				8E1D0EAC2C1B30EF00C2BC5B /* Network */,
+				8E1D0EAB2C1B30B100C2BC5B /* Models */,
+				8E1D0EAE2C1B332100C2BC5B /* AeroportsCodes */,
+				8E1D0EB02C1B3ADC00C2BC5B /* CoreData */,
 				8E1D0E952C0CCE0900C2BC5B /* Info.plist */,
-				8E1D0E8D2C0CCE0400C2BC5B /* SkyQuest.xcdatamodeld */,
 			);
 			path = SkyQuest;
+			sourceTree = "<group>";
+		};
+		8E1D0EAB2C1B30B100C2BC5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0E9D2C0FACEA00C2BC5B /* FlightsModel.swift */,
+				8E1D0EA72C13514700C2BC5B /* DateTimeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E1D0EAC2C1B30EF00C2BC5B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0E9F2C10F7A100C2BC5B /* NetworkManager.swift */,
+				8E1D0EA52C12516F00C2BC5B /* NetworkManagerForPictures.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8E1D0EAD2C1B32DA00C2BC5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0E882C0CCE0400C2BC5B /* SearchForTicketsViewController.swift */,
+				8E1D0EA32C12085000C2BC5B /* SearchResultsController.swift */,
+				8E1D0EA12C12022B00C2BC5B /* FlightTableViewCell.swift */,
+				8E1D0E9B2C0CDBAB00C2BC5B /* FavoritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E1D0EAE2C1B332100C2BC5B /* AeroportsCodes */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0EA92C17645600C2BC5B /* AeroportsCodes.swift */,
+			);
+			path = AeroportsCodes;
+			sourceTree = "<group>";
+		};
+		8E1D0EAF2C1B348C00C2BC5B /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0E842C0CCE0400C2BC5B /* AppDelegate.swift */,
+				8E1D0E862C0CCE0400C2BC5B /* SceneDelegate.swift */,
+				8E1D0E902C0CCE0900C2BC5B /* Assets.xcassets */,
+				8E1D0E922C0CCE0900C2BC5B /* LaunchScreen.storyboard */,
+				8E1D0E8D2C0CCE0400C2BC5B /* SkyQuest.xcdatamodeld */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		8E1D0EB02C1B3ADC00C2BC5B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8E1D0EB52C1B4CA600C2BC5B /* CoreDataManager.swift */,
+				8E1D0EB72C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataClass.swift */,
+				8E1D0EB82C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +208,6 @@
 			files = (
 				8E1D0E942C0CCE0900C2BC5B /* LaunchScreen.storyboard in Resources */,
 				8E1D0E912C0CCE0900C2BC5B /* Assets.xcassets in Resources */,
-				8E1D0E8C2C0CCE0400C2BC5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +218,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1D0E892C0CCE0400C2BC5B /* ViewController.swift in Sources */,
+				8E1D0E892C0CCE0400C2BC5B /* SearchForTicketsViewController.swift in Sources */,
 				8E1D0E852C0CCE0400C2BC5B /* AppDelegate.swift in Sources */,
 				8E1D0E8F2C0CCE0400C2BC5B /* SkyQuest.xcdatamodeld in Sources */,
+				8E1D0EB62C1B4CA600C2BC5B /* CoreDataManager.swift in Sources */,
+				8E1D0EB92C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataClass.swift in Sources */,
+				8E1D0EA02C10F7A100C2BC5B /* NetworkManager.swift in Sources */,
+				8E1D0EA42C12085000C2BC5B /* SearchResultsController.swift in Sources */,
+				8E1D0E9E2C0FACEA00C2BC5B /* FlightsModel.swift in Sources */,
+				8E1D0EA22C12022B00C2BC5B /* FlightTableViewCell.swift in Sources */,
+				8E1D0E9C2C0CDBAB00C2BC5B /* FavoritesViewController.swift in Sources */,
+				8E1D0EAA2C17645600C2BC5B /* AeroportsCodes.swift in Sources */,
 				8E1D0E872C0CCE0400C2BC5B /* SceneDelegate.swift in Sources */,
+				8E1D0EA82C13514700C2BC5B /* DateTimeModel.swift in Sources */,
+				8E1D0EBA2C1B51A300C2BC5B /* FlightsInfoEntity+CoreDataProperties.swift in Sources */,
+				8E1D0EA62C12516F00C2BC5B /* NetworkManagerForPictures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8E1D0E8A2C0CCE0400C2BC5B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E1D0E8B2C0CCE0400C2BC5B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E1D0E922C0CCE0900C2BC5B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +381,6 @@
 				INFOPLIST_FILE = SkyQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +408,6 @@
 				INFOPLIST_FILE = SkyQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
