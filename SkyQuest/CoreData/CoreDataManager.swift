@@ -73,7 +73,6 @@ class CoreDataManager {
         flightInfoDB.returnAt = flightInfo.return_at
         flightInfoDB.link = flightInfo.link
         saveContext()
-        print("Data saved to DB")
     }
     
     // MARK: Определяем метод для загрузки Flights из DataBase
