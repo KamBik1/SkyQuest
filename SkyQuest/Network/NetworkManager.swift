@@ -5,6 +5,7 @@
 //  Created by Kamil Biktineyev on 05.06.2024.
 //
 import Foundation
+import UIKit
 
 class NetworkManager {
     let sessionConfig = URLSession(configuration: .default)
@@ -26,7 +27,7 @@ class NetworkManager {
                 return
             }
             if error == nil, let data = data {
-                guard let recievedFlights = try? strongSelf.decoder.decode(Flight.self, from: data) else { 
+                guard let recievedFlights = try? strongSelf.decoder.decode(Flight.self, from: data) else {
                     completion([])
                     return }
                 DispatchQueue.main.async {
@@ -39,4 +40,21 @@ class NetworkManager {
             }
         }.resume()
     }
+    
+    func getPicture(airlineLogo: String, completion: @escaping (UIImage) -> Void) {
+        guard let url = URL(string: "http://pics.avs.io/100/30/\(airlineLogo).png") else {
+            return
+        }
+        session.dataTask(with: url) { (data, response, error) in
+            if let data = data, let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    completion(image)
+                }
+            } else {
+                guard let error = error else { return }
+                print("Error: \(error.localizedDescription)")
+            }
+        }.resume()
+    }
+    
 }

@@ -27,7 +27,7 @@ class FlightTableViewCell: UITableViewCell {
     private lazy var starButton: UIButton = createStarButton()
     private lazy var detailsButton: UIButton = createDetailsButton()
     
-    var networkManagerForPictures = NetworkManagerForPictures()
+    var networkManagerForPictures = NetworkManager()
     
     var oneFlightInfo: FlightInfo = FlightInfo(origin: "", destination: "", origin_airport: "", destination_airport: "", airline: "", departure_at: "", return_at: "", link: "")
     
